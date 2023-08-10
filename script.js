@@ -9,7 +9,7 @@ getWeatherBtn.addEventListener("click", () => {
 	fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
-            const weatherDescription = data.weather[0].description;
+            const weatherDescription = data.weather[0].main;
             weatherDataDiv.textContent = `Current weather in London: ${weatherDescription}`;
         })
         .catch(error => {
