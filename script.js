@@ -16,5 +16,5 @@ getWeatherBtn.addEventListener("click", () => {
             console.error("Error fetching weather data:", error);
         });
 
-	fetch()
+	
 });
