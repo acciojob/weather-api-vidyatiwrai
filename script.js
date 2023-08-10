@@ -3,7 +3,7 @@
 
         // Function to fetch weather data
         function getWeatherData() {
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}`;
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={117a142046bf80b24ded8dbab6fbedd3}`;
             
             fetch(apiUrl)
                 .then(response => response.json())
