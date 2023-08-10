@@ -1,10 +1,12 @@
-const getWeatherBtn = document.getElementById("getWeatherBtn");
+const getWeatherBtn = document.getElementById("getWeatherButton");
 const weatherDataDiv = document.getElementById("weatherData");
 
 getWeatherBtn.addEventListener("click", () => {
-    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={4929ccc13d3c700c550ba9093c80cd28}";
+    // const apiUrl1 = "https://api.openweathermap.org/geo/1.0/direct?q=India&appi?d=117a142046bf80b24ded8dbab6fbedd3";
+    const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=117a142046bf80b24ded8dbab6fbedd3"
+
     
-    fetch(apiUrl)
+	fetch(apiUrl)
         .then(response => response.json())
         .then(data => {
             const weatherDescription = data.weather[0].description;
@@ -13,4 +15,6 @@ getWeatherBtn.addEventListener("click", () => {
         .catch(error => {
             console.error("Error fetching weather data:", error);
         });
+
+	fetch()
 });
